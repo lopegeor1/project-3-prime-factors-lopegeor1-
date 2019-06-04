@@ -11,3 +11,9 @@ def test_invalid_input():
     """
     with pytest.raises(ValueError):
         generate_prime_factors('edward')
+
+def test_input_1():
+    """
+    Given an input of 1 an empty list should be returned.
+    """
+    assert generate_prime_factors(1) == []
