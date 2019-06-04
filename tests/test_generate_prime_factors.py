@@ -51,3 +51,10 @@ def test_input_8():
     are listed
     """
     assert generate_prime_factors(8) == [2, 2, 2]
+
+def test_input_9():
+    """
+    Given an input of 9, all contributing prime factors i.e. 3 * 3
+    are listed
+    """
+    assert generate_prime_factors(9) == [3, 3]
