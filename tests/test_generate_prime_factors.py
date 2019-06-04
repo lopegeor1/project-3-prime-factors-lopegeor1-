@@ -17,3 +17,9 @@ def test_input_1():
     Given an input of 1 an empty list should be returned.
     """
     assert generate_prime_factors(1) == []
+
+def test_input_2():
+    """
+    Given an input of 2 a prime factir of 2 should be returned.
+    """
+    assert generate_prime_factors(2) == [2]
