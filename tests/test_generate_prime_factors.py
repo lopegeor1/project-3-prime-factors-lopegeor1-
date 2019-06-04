@@ -29,3 +29,9 @@ def test_input_3():
     Given an input of 3 a prime factor of 3 should be returned.
     """
     assert generate_prime_factors(3) == [3]
+
+def test_input_4():
+    """
+    Given an input of 4 all contributing prime factors, i.e. 2 * 2
+    """
+    assert generate_prime_factors(4) == [2, 2]
