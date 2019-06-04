@@ -35,3 +35,12 @@ def test_input_4():
     Given an input of 4 all contributing prime factors, i.e. 2 * 2
     """
     assert generate_prime_factors(4) == [2, 2]
+
+def test_input_6():
+    """
+    Given an input of 6 all contributing prime factors, i.e. 2 * 3
+    this is an example of the orginal requirement to solve at the beginning
+    of the assignment (solved for this from the beginning, exludes 1
+    prime factor)
+    """
+    assert generate_prime_factors(6) == [2, 3]
