@@ -44,3 +44,10 @@ def test_input_6():
     prime factor)
     """
     assert generate_prime_factors(6) == [2, 3]
+
+def test_input_8():
+    """
+    Given an input of 8, all contributing prime factors i.e. 2 * 2 * 2
+    are listed
+    """
+    assert generate_prime_factors(8) == [2, 2, 2]
