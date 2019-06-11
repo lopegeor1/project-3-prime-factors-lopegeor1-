@@ -7,10 +7,15 @@ def generate_prime_factors(number):
     """
     i = 2
     factors = []
+
+    #checks if number is an integer, if not raises ValueError
     if not isinstance(number, int):
         raise ValueError
+
+    #checks range of values such that the root squared is not greater
+    #than the given number using while loop
     while i * i <= number:
-        if number % i:
+        if number % i: #append
             i += 1
         else:
             number //= i
